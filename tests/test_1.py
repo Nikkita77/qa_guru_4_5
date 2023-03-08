@@ -7,9 +7,10 @@ def test_ui_form():
     browser.element('#lastName').type('Ivanov')
     browser.element('#userEmail').type('ivanov@mail.ru')
     browser.element('//*[@id="genterWrapper"]/div[2]/div[1]/label').click()
-    # browser.element('//*[@id="subjectsContainer"]/div/div[1]').type('1234567891')
-    # browser.element('#dateOfBirthInput').click().type('')
-    browser.element('//*[@id="subjectsContainer"]/div').type('Math')
+    browser.element('#userNumber').type(1234567891)
+    browser.element('#dateOfBirthInput').clear()
+
+    # browser.element('//*[@id="subjectsContainer"]/div').type('Math')
     browser.element('//*[@id="hobbiesWrapper"]/div[2]/div[1]/label').click()
 
     browser.element('#currentAddress').type('Moscow')
